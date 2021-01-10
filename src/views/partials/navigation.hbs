@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            {{#if userno}}
+            <li class="nav-item">
+                <a class="nav-link" href="/">Inicio</a>
+            </li>
+            {{/if}}
+            {{#if user}}
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Perfil
+                    </a>
+                    <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="/home/profile">Ver Perfil</a>
+                        <a class="dropdown-item" href="/logout">Desconectarse</a>
+                        {{!-- <a class="dropdown-item" href="#">Ayuda del Administrador</a> --}}
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Agregar
+                    </a>
+                    <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="/home/add1">Agregar Compra</a>
+                        <a class="dropdown-item" href="/home/add3">Agregar Venta</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Mostrar
+                    </a>
+                    <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="/home/listCompra">Mostrar Compra</a>
+                        <a class="dropdown-item" href="/home/listVentas">Mostrar Venta</a>
+                    </div>
+                </li>
+            {{/if}}
+        </ul>
+    </div>
+</nav>

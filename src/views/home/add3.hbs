@@ -1,0 +1,44 @@
+<div class="container p-2 pt-5">
+    <div class="row">
+        {{> message_success }}
+        <div class="d-flex mx-auto">
+            {{!-- OTHER CARD --}}
+            <div class="card m-2">
+                <div class="card-body">
+                    <h3>Cliente</h3>
+                    <form action="/home/add3" method="POST">
+                        <label for="codigo_empresa_cliente" class="pt-4">Codigo de la Empresa</label>
+                        <div class="form-group">
+                            <input type="number" class="form-control" name="codigo_empresa_cliente">
+                        </div>
+                        <label for="nombre_empresa_cliente">Nombre de la Empresa</label>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="nombre_empresa_cliente">
+                        </div>
+                        <label for="fecha_envio" class="pt-4">Fecha de Envio</label>
+                        <div class="form-group">
+                            <input type="date" class="form-control" name="fecha_envio">
+                        </div>
+                        <label for="fecha_recibido">Fecha de Entrega</label>
+                        <div class="form-group">
+                            <input type="date" class="form-control" name="fecha_recibido">
+                        </div>
+                        <label for="tipo_envio">Tipo de Envio</label>
+                        <select class="form-control" name="tipo_envio">
+                            <option>Entrega Normal</option>
+                            <option>Entrega Rapida</option>
+                        </select>
+                        <div class="form-group p-4">
+                            <button class="btn btn-primary btn-block">
+                                Guardar
+                            </button>
+                        </div>
+                    </form>
+                    <a href="/home/profile"><button class="btn btn-primary btn-block">
+                            Atras
+                        </button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

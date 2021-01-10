@@ -1,0 +1,41 @@
+<div class="container p-2 pt-5">
+    <div class="row">
+        <div class="d-flex mx-auto">
+            <div class="card m-2">
+                <div class="card-body">
+                    <h3>Empresa Extranjera</h3>
+                    <form action="/home/add1" method="POST">
+                        <label for="codigo_empresa" class="pt-4">Codigo de la Empresa</label>
+                        <div class="form-group">
+                            <input type="number" class="form-control" name="codigo_empresa">
+                        </div>
+                        <label for="nombre_empresa">Nombre de la Empresa</label>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="nombre_empresa">
+                        </div>
+                        <label for="codigo_vuelo">Codigo del Vuelo</label>
+                        <div class="form-group">
+                            <input type="number" class="form-control" name="codigo_vuelo">
+                        </div>
+                        <label for="fecha_salida">Fecha_Salida</label>
+                        <div class="form-group">
+                            <input type="date" class="form-control" name="fecha_salida">
+                        </div>
+                        <label for="fecha_llegada">Fecha_Llegada</label>
+                        <div class="form-group">
+                            <input type="date" class="form-control" name="fecha_llegada">
+                        </div>
+                        <div class="form-group p-4">
+                            <button class="btn btn-primary btn-block">
+                                Guardar
+                            </button>
+                        </div>
+                    </form>
+                    <a href="/home/profile"><button class="btn btn-primary btn-block">
+                            Atras
+                        </button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

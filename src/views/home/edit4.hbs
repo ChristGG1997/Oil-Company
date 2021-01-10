@@ -1,0 +1,26 @@
+<div class="container p-2 pt-5">
+    <div class="row">
+        <div class="d-flex mx-auto">
+            <div class="card m-2">
+                <div class="card-body">
+                    <h3>Empresa Extranjera</h3>
+                    <form action="/home/edit/pedido/:id" method="POST">
+                        <label for="codigo_pedido" class="pt-4">Codigo del Pedido</label>
+                        <div class="form-group">
+                            <input type="number" value="{{link4.codigo_pedido}}" class="form-control" name="codigo_pedido">
+                        </div>
+                        <label for="cantidad_articulo">Cantidad</label>
+                        <div class="form-group">
+                            <input type="number" value="{{link4.cantidad_articulo}}" class="form-control" name="cantidad_articulo">
+                        </div>
+                        <div class="form-group p-4">
+                            <button class="btn btn-primary btn-block">
+                                Guardar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

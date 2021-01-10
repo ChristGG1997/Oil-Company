@@ -1,0 +1,28 @@
+{{> message_success }}
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h3>Bienvenido {{user.names}} {{user.lastnames}}</h3>
+                </div>
+                <div class="card-body d-flex p-4">
+                    <a href="/home/add1" class="col-md-6"><button class="btn btn-primary btn-block">
+                        Agregar Compra
+                    </button></a>
+                    <a href="/home/add3" class="col-md-6"><button class="btn btn-primary btn-block">
+                        Agregar Venta
+                        </button></a>
+                </div>
+                <div class="card-body d-flex p-4">
+                    <a href="/home/listCompra" class="col-md-6"><button class="btn btn-primary btn-block">
+                            Mostrar Compras
+                        </button></a>
+                    <a href="/home/listVentas" class="col-md-6"><button class="btn btn-primary btn-block">
+                            Mostrar Ventas
+                        </button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

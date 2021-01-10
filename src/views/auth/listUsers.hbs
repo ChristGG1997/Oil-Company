@@ -1,0 +1,52 @@
+<div class="mx-auto col-md-12">
+    {{> message_success }}
+</div>
+<div class="container pt-4 mt-4">
+    <a href="/auth/profileAdmin" class="mx-auto"><button class="btn btn-primary btn-block col-sm-2 mx-auto mb-3">
+            Atras
+        </button></a>
+    <div class="row">
+        <h1 class="mx-auto font-weight-bold">Historial de ventas</h1>
+    </div>
+</div>
+
+<div class="p-4 mx-auto">
+    <div class="">
+        <div class="mx-auto">
+            {{#each listUsers}}
+            <div class="card text-center ml-4 mr-4 mt-5">
+                <div class="card-body bg-secundary text-primary d-flex mx-auto">
+                    <div class="card-title text-uppercase p-4">
+                        <p class="font-weight-bold">Usuario</p>
+                        {{username}}
+                    </div>
+                    <div class="card-title text-uppercase p-4">
+                        <p class="font-weight-bold">Cedula</p>
+                        {{cedula}}
+                    </div>
+                    <div class="card-title text-uppercase p-4">
+                        <p class="font-weight-bold">Nombre</p>
+                        {{names}}
+                    </div>
+                    <div class="card-title text-uppercase p-4">
+                        <p class="font-weight-bold">Apellidos</p>
+                        {{lastnames}}
+                    </div>
+                    <div class="card-title text-uppercase p-4">
+                        <p class="font-weight-bold">Correo</p>
+                        {{email}}
+                    </div>
+                    <div class="card-title text-uppercase p-4">
+                        <p class="font-weight-bold">Celular</p>
+                        {{celular}}
+                    </div>
+                    <div class="card-title text-uppercase p-4">
+                        <p class="font-weight-bold">Direcion</p>
+                        {{direccion}}
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>

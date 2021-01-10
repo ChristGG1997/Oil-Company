@@ -1,0 +1,39 @@
+<div class="container p-2 pt-5">
+    <div class="row">
+        {{> message_success }}
+        <div class="d-flex mx-auto">
+            <div class="card m-2">
+                <div class="card-body">
+                    <h3>Pedido</h3>
+                    <form action="/home/add2" method="POST">
+                        <label for="codigo_pedido" class="pt-4">Codigo del Pedido</label>
+                        <div class="form-group">
+                            <input type="number" class="form-control" name="codigo_pedido">
+                        </div>
+                        <label for="codigo_articulo">Codigo del Articulo</label>
+                        <div class="form-group">
+                            <input type="number" class="form-control" name="codigo_articulo">
+                        </div>
+                        <label for="nombre_articulo">Nombre del Articulo</label>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="nombre_articulo">
+                        </div>
+                        <label for="cantidad_articulo">Cantidad</label>
+                        <div class="form-group">
+                            <input type="number" class="form-control" name="cantidad_articulo">
+                        </div>
+                        <label for="peso">Peso (kg) </label>
+                        <div class="form-group">
+                            <input type="number" class="form-control" name="peso">
+                        </div>
+                        <div class="form-group p-4">
+                            <button class="btn btn-primary btn-block" >
+                                Guardar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

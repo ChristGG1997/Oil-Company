@@ -1,0 +1,79 @@
+<div class="mx-auto col-md-12">
+    {{> message_success }}
+</div>
+<div class="container pt-4 mt-4 ">
+    <a href="/home/profile" class="mx-auto"><button class="btn btn-primary btn-block col-sm-2 mx-auto mb-3">
+            Atras
+        </button></a>
+    <div class="row">
+        <h1 class="mx-auto font-weight-bold">Historial de Compras</h1>
+    </div>
+</div>
+
+<div class="p-4 mx-auto">
+    <div class="">
+        <div class="mx-auto">
+            {{#each JsonUnido}}
+                <div class="card text-center ml-4 mr-4 mt-5">
+                    <div class="card-body bg-secundary text-primary d-flex">
+
+                        {{!-- EMPRESA EXTRANJERA --}}
+                        <div class="card-title text-uppercase p-4">
+                            <p class="font-weight-bold">Empresa Estranjera</p>
+                            {{nombre_empresa}}
+                        </div>
+                        <div class="card-title text-uppercase p-4">
+                            <p class="font-weight-bold">Codigo de la Empresa</p>
+                            {{codigo_empresa}}
+                        </div>
+                        <a href="/home/edit/empresa/{{id}}"><i class="fas fa-edit fa-2x p-2 mt-5"></i></a>
+
+                    {{!-- Vuelo --}}
+                        <div class="card-title text-uppercase p-4">
+                            <p class="font-weight-bold">Codigo del Vuelo</p>
+                            {{codigo_vuelo}}
+                        </div>
+                        <div class="card-title text-uppercase p-4">
+                            <p class="font-weight-bold">Fecha Salida</p>
+                            {{fecha_salida}}
+                        </div>
+                        <div class="card-title text-uppercase p-4">
+                            <p class="font-weight-bold">Fecha Llegada</p>
+                            {{fecha_llegada}}
+                        </div>
+                        <a href="/home/edit/vuelo/{{id}}"><i class="fas fa-edit fa-2x p-2 mt-5"></i></a>
+
+                    {{!-- ArticuloL --}}
+
+                        <div class="card-title text-uppercase p-4">
+                            <p class="font-weight-bold">Codigo del Articulo</p>
+                            {{codigo_articulo}}
+                        </div>
+                        <div class="card-title text-uppercase p-4">
+                            <p class="font-weight-bold">Nommbre del Articulo</p>
+                            {{nombre_articulo}}
+                        </div>
+                        <div class="card-title text-uppercase p-4">
+                            <p class="font-weight-bold">Peso del Articulo en (KG)</p>
+                            {{peso}}
+                        </div>
+                        <a href="/home/edit/articulo/{{id}}"><i class="fas fa-edit fa-2x p-2 mt-5"></i></a>
+                    
+
+                    {{!-- PedidoL --}}
+
+                        <div class="card-title text-uppercase p-4">
+                            <p class="font-weight-bold">Codigo del Pedido</p>
+                            {{codigo_pedido}}
+                        </div>
+                        <div class="card-title text-uppercase p-4">
+                            <p class="font-weight-bold">Cantidad del Articulo</p>
+                            {{cantidad_articulo}}
+                        </div>
+                        <a href="/home/edit/pedido/{{id}}"><i class="fas fa-edit fa-2x p-2 mt-5"></i></a>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</div>

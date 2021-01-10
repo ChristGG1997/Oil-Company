@@ -1,0 +1,47 @@
+<div class="mx-auto col-md-12">
+    {{> message_success }}
+</div>
+<div class="container pt-4 mt-4">
+    <a href="/home/profile" class="mx-auto"><button class="btn btn-primary btn-block col-sm-2 mx-auto mb-3">
+            Atras
+        </button></a>
+    <div class="row">
+        <h1 class="mx-auto font-weight-bold">Historial de ventas</h1>
+    </div>
+</div>
+
+<div class="p-4 mx-auto">
+    <div class="">
+        <div class="mx-auto">
+            {{#each ClientesL}}
+                    {{!-- ClientesL --}}
+                    <div class="card text-center ml-4 mr-4 mt-5">
+                        <div class="card-body bg-secundary text-primary d-flex">
+
+                        <div class="card-title text-uppercase p-4">
+                            <p class="font-weight-bold">Empresa Cliente</p>
+                            {{nombre_empresa_cliente}}
+                        </div>
+                        <div class="card-title text-uppercase p-4">
+                            <p class="font-weight-bold">Codigo de la Empresa Cliente </p>
+                            {{codigo_empresa_cliente}}
+                        </div>
+                        <div class="card-title text-uppercase p-4">
+                            <p class="font-weight-bold">Fecha Envio</p>
+                            {{fecha_envio}}
+                        </div>
+                        <div class="card-title text-uppercase p-4">
+                            <p class="font-weight-bold">Fecga Llegada</p>
+                            {{fecha_recibido}}
+                        </div>
+                        <div class="card-title text-uppercase p-4">
+                            <p class="font-weight-bold">Tipo de Envio</p>
+                            {{tipo_envio}}
+                        </div>
+                        <a href="/home/edit/clientes/{{id}}"><i class="fas fa-edit fa-2x p-2 mt-5"></i></a>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="container p-2 pt-5">
+    <div class="row">
+        <div class="d-flex mx-auto">
+            <div class="card m-2">
+                <div class="card-body">
+                    <h3>Empresa Extranjera</h3>
+                    <form action="/home/edit/empresa/:id" method="POST">
+                        <label for="codigo_empresa" class="pt-4">Codigo de la Empresa</label>
+                        <div class="form-group">
+                            <input type="number" value="{{link1.codigo_empresa}}" class="form-control disable" name="codigo_empresa">
+                        </div>
+                        <label for="nombre_empresa">Nombre de la Empresa</label>
+                        <div class="form-group">
+                            <input type="text" value="{{link1.nombre_empresa}}" class="form-control" name="nombre_empresa">
+                        </div>
+                            <button class="btn btn-primary btn-block">
+                                Guardar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
