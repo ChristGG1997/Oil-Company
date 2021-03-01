@@ -13,9 +13,7 @@ mySQL v14.14+
 
 ### Instalación 🔧
 
---> Descargar repo
---> npm install -g
---> npm run dev
+
 
 ## Construido con 🛠️
 
