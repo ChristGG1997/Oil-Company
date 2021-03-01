@@ -25,5 +25,4 @@ Mysql
 
 ## Autor ✒️
 
-Arlex Lizarazo (Arlex99)
 Christian Iglesias(ChristGG)
